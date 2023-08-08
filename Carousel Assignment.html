@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Carousel</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-2">
+        <div class="carousel slide" id="demo">
+            <div class="carousel-indicators">
+                <button class="active" data-bs-slide-to="0" data-bs-target="#demo"></button>
+                <button data-bs-slide-to="1" data-bs-target="#demo"></button>
+                <button data-bs-slide-to="2" data-bs-target="#demo"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <h2>First Slide Label</h2>
+                        <p>Some placehoder content for the first slide.</p>
+                    </div>
+                    <img src="chicago.jpg" alt="Chicago"class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h2>Second Slide Label</h2>
+                        <p>Some placehoder content for the second slide.</p>
+                    </div>
+                    <img src="la.jpg" alt="LA" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h2>Third Slide Label</h2>
+                        <p>Some placehoder content for the third slide.</p>
+                    </div>
+                    <img src="ny.jpg" alt="NY" class="d-block w-100">
+                </div>
+            </div>
+            <button  type="button" 
+                    class="carousel-control-prev"
+                    data-bs-slide="prev"
+                    data-bs-target="#demo">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" 
+                    class="carousel-control-next"
+                    data-bs-slide="next"
+                    data-bs-target="#demo">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
